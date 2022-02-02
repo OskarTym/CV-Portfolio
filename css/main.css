@@ -143,6 +143,20 @@ body{
     margin: 0 20px;
 }
 
+.ava-container{
+    overflow: hidden;
+    margin: auto;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+
+    box-shadow: 0 0 25px black;
+    
+    -webkit-animation: 2s linear waves infinite;
+    
+    animation: 2s linear waves infinite;
+}
+
 .ava{
     overflow: hidden;
     margin: auto;
@@ -153,12 +167,6 @@ body{
     background-image: url(../img/me.png);
     background-size: contain;
     background-repeat: no-repeat;
-    
-    box-shadow: 0 0 25px black;
-    
-    -webkit-animation: 2s linear waves infinite;
-    
-    animation: 2s linear waves infinite;
     
     -webkit-transition: 0.7s;
     
@@ -220,11 +228,7 @@ body{
     background-color: rgba(0, 0, 0, 0.9);
     opacity: 0;
     
-
-    
     -webkit-transform: scale(1.1, 1.1) rotateY(180deg);
-    
-
     
     transform: scale(1.1, 1.1) rotateY(180deg);
     
@@ -256,25 +260,25 @@ body{
     opacity: 0;
 }
 
-.ava:hover{
+.ava-container:hover .ava{
     -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
     box-shadow: 0 0 25px white;
 }
 
-.ava:hover .info{
+.ava-container:hover .info{
     opacity: 1;
 }
 
-.ava:hover .name{
+.ava-container:hover .name{
     padding-bottom: 0;
     opacity: 1;
 }
-.ava:hover .location{
+.ava-container:hover .location{
     opacity: 1;
     padding: 5px;
 }
-.ava:hover .age{
+.ava-container:hover .age{
     opacity: 1;
 }
 
