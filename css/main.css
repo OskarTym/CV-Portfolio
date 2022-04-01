@@ -121,6 +121,7 @@ body{
 
 .techs img{
     position: relative;
+    margin: auto 10px;
     height: 90px;
     -webkit-transition: 0.3s;
     transition: 0.3s;
