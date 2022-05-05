@@ -1,6 +1,6 @@
 name: Trigger Test
 
-on: [push, workflow_dispatch]
+on: [push]
 jobs:
   trigger:
     runs-on: ubuntu-latest
