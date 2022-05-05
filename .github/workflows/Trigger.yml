@@ -10,3 +10,4 @@ jobs:
       with:
         repository: OskarTym/Cypress-CI-CD-sample
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
