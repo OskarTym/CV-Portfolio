@@ -9,5 +9,5 @@ jobs:
     - uses: passeidireto/trigger-external-workflow-action@main
       with:
         repository: OskarTym/Cypress-CI-CD-sample
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        github_pat: ${{ secrets.GITHUB_TOKEN }}
 
