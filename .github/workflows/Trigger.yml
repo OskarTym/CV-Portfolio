@@ -1,0 +1,12 @@
+name: Trigger Test
+
+on: [push, workflow_dispatch]
+jobs:
+  trigger:
+    runs-on: ubuntu-latest
+    name: "📦 Trigger Project Test"
+    steps:
+    - uses: passeidireto/trigger-external-workflow-action@main
+      with:
+        repository: OskarTym/Cypress-CI-CD-sample
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
